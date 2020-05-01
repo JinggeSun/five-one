@@ -57,7 +57,7 @@ def hello_world():
     return 'Hello World!'
 
 
-@app.route("/table/list")
+@app.route("/table_db/list")
 def table_list():
     mysql_db = mysql.connector.connect(
         host="",
