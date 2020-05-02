@@ -74,7 +74,7 @@ class DbUtil:
 
 
 if __name__ == '__main__':
-    db1 = DbUtil(host='47.104.2.74', username='root', password='/H#aPd%yf99lwypt', database='gsipDMP')
+    db1 = DbUtil(host='', username='root', password='', database='gsipDMP')
     db1.connect()
     # 查找某一行
     print(db1.count('gs_index', None, None))

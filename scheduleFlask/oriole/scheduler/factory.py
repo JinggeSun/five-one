@@ -7,6 +7,10 @@ from flask_apscheduler import APScheduler
 scheduler = APScheduler()
 
 
+def method_test(obj1, obj2):
+    print("调度---> " + obj2 + obj1)
+
+
 def scheduler_init(app):
     f = open("scheduler.lock", "wb")
     try:
