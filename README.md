@@ -31,3 +31,22 @@ python版本：python3+
 #### Flask-APScheduler学习
 1. 集成到flask里面，动态添加任务（未完成）
 2. 启动时，使用文件锁，保证只有1个进程启用调度
+# Java
+spring boot 知识学习
+### 自定义starter
+1. @ConfigurationProperties(prefix = "xxx")，getter，setter
+2. 重新编译一下项目，配置文件可以自动提示第一条的变量
+3. @ConditionalOnProperty("") 当配置文件中有变量内容时
+4. @EnableConfigurationProperties(xxx.class) 可以注入这个xxx类
+5. 编写bean
+6. 如果bean需要初始化 @Bean(initMethod = "init")
+7. spring-boot-configuration-processor pom
+8. metainf 新建spring.factoies
+9. org.springframework.boot.autoconfigure.EnableAutoConfiguration=自动配置全路径
+### 配置文件密码加密
+之前数据库加密是通过druid实现的，现在用jasypt，针对redis，sql都可以
+1. 三板斧
+#### 打包时
+1. java -jar yourproject.jar --jasypt.encryptor.password=CodeSheep
+2. java -Djasypt.encryptor.password=CodeSheep -jar yourproject.jar
+

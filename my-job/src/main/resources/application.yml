@@ -1,0 +1,18 @@
+#elasticjob:
+#  zookeeper:
+#    namespace: es
+#    server-list: localhost:2181
+
+
+jasypt:
+  encryptor:
+    password: CodeSheep
+
+spring:
+  datasource:
+  #   数据源基本配置
+    username: root
+    #password: /H#aPd%yf99lwypt
+    password: ENC(uZx2joLutROJsWDypV6ZOBM5XfOH7WlDynwLKF64W6y6EA9CO5cyF4pL2tjwY0mOHbFzudtP0NkcjQAoTnodaA==)
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://47.104.2.74:3306/gsipDMP?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false
